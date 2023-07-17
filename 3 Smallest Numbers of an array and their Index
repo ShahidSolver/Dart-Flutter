@@ -1,0 +1,61 @@
+int sum() {
+  var array = [11, 2, 4, 14, 1, 8, 5, 6, 7, 3];
+  int k = 0;
+  int l=0;
+  int m=0;
+
+// 1st Smallest
+
+  int smallest = array[0];
+
+  for (int i = 1; i < array.length; i++) {
+    if (array[i] < smallest) {
+        
+      smallest = array[i];
+      k=i;
+    }
+      
+  }
+
+  //2nd smallest
+
+  int _2smallest = array[0];
+
+  for (int i = 1; i < array.length; i++) {
+    if (array[i] < _2smallest && array[i] > smallest) {
+      _2smallest = array[i];
+  l=i;
+    } else if (_2smallest == smallest) {
+  l=i;
+    }
+  }
+
+  //3rd Smallest
+  
+  int _3smallest = array[0];
+
+  for (int i = 1; i < array.length; i++) {
+    if (array[i] > _2smallest && array[i] < _3smallest) {
+      _3smallest = array[i];
+m=i;
+
+    } else if (_3smallest == _2smallest || _3smallest == smallest) {
+      _3smallest = array[i];
+m=i;
+    }
+  }
+
+  print('1st smallest of an array is = $smallest ');
+  print('index of 1st smallesr umber is = $k');
+  print('2nd smallest of an array is = $_2smallest ');
+  print('index of 1st smallesr umber is = $l ');
+  print('3rd smallest of an array is = $_3smallest ');
+  print('index of 1st smallesr umber is = $m'); 
+  return 0;
+}
+
+int main() {
+  sum();
+
+  return 0;
+}
