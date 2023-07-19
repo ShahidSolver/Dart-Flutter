@@ -22,5 +22,9 @@ print("It's Shahid");   // print ('it's Shahid') >> this will give error
 //String Concatenation  +
 print('Shahid' + 'Solver');  //both are of string type
 print ('my age is ' + c );    //as both are of string data type if won't it's error
+print ('my age is $c');
 
+String d='Shahid';
+print("The word 'SHAHID' stored in d variable  length is ${d.length}");
+  
 }
