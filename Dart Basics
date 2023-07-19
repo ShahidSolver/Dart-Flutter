@@ -1,0 +1,26 @@
+void main() {
+  
+  // converting String to Integer
+  int a=10;
+  print(a);
+int b=int.parse("20");
+print (a+b);
+  
+// Converting integer into string
+  String c= 50.toString();
+  print(c);
+
+//How to confirm data type
+print(c.runtimeType);
+
+
+//Difference in Single Quotation & Double Quotation in string ;
+print('Shahid');
+print("It's Shahid");   // print ('it's Shahid') >> this will give error
+
+
+//String Concatenation  +
+print('Shahid' + 'Solver');  //both are of string type
+print ('my age is ' + c );    //as both are of string data type if won't it's error
+
+}
