@@ -1,0 +1,20 @@
+int main() {
+//   Differnce in Var and Dynamic data type
+
+
+//    Var
+  var a = 9;
+  print(a);
+//   var a=9;    <At declaration, we don't need to specify its data type; it will automatically adjust based on the value assigned.>
+//   var a='shahid';  <At declaration, we don't need to specify its data type; it will automatically adjust based on the value assigned.>
+// print (a);        
+
+
+// Dynamic data type
+  dynamic  b=10;
+  print (b);
+  b='Shahid';    //In dynamic, we can change its data type
+  print(b);
+
+  return 0;
+}
