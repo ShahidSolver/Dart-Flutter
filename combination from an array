@@ -1,8 +1,10 @@
 int pattern() {
-  var array = [1, 2, 5, 1];
+  var array = [1, 2, 5, 6];  //integer should be between 0 and 9
 
+for (int m=0 ;m<array.length;m++){
+  if (array[m]>=0 && array[m]<=9){
+  
 
-if (array[0]<=9 && array[1]<=9 && array[2]<=9 && array[3]<=9  ) {
   for (int i = 0; i < array.length; i++) {
     for (int j = 0; j < array.length; j++) {
       for (int k = 0; k < array.length; k++) {
@@ -12,14 +14,18 @@ if (array[0]<=9 && array[1]<=9 && array[2]<=9 && array[3]<=9  ) {
       }
     }
   }
-}
+  
+  }
+
+
   else{
     print ('index value is greater than 9');
   }
+}
   return 0;
 }
 
 int main() {
   pattern();
   return 0;
-}
+} 
