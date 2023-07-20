@@ -13,8 +13,9 @@ int pattern() {
                   array[k] != array[i]) {
                 val = array[i] * 100 + array[j] * 10 + array[k] * 1;
               }
+              if (!arrayTwo.contains(val)){
               arrayTwo.add(val);
-              
+              }
             }
           }
         }
@@ -24,7 +25,7 @@ int pattern() {
     }
   }
 
- 
+ print(arrayTwo);
   print("Length of arrayTwo = ${arrayTwo.length}");
   return 0;
 }
