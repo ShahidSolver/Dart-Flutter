@@ -1,0 +1,19 @@
+int main() {
+  
+
+
+  int num=5;
+  
+ List  array=[];
+  
+  for(int i=1;i<=num;i++){
+  array.add(i);  
+  }
+  for(int i=num-1;i>=1;i--)
+  {
+  array.add(i);
+  }
+  print(array);
+
+return 0;
+}
