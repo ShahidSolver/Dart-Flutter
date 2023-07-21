@@ -1,0 +1,39 @@
+void main() {
+  int number = 5610;
+  int sum = 0;
+  int five = 0;
+  int not = 0;
+  int fi = 0;
+  int one = 0;
+  int on = 0;
+  int ten = 0;
+
+  if (number >= 1000) {
+    sum = number ~/ 1000;
+    //5
+    five = sum;
+    not = five * 1000;
+    number = number - not;
+
+    if (number <= 1000 && number > 499) {
+      sum = number ~/ 500;
+      fi = sum;
+      not = fi * 500;
+      number = number - not;
+      if (number > 99 && number < 500) {
+        sum = number ~/ 100;
+        on = sum * 100;
+        one = sum;
+        number = number - on;
+        if (number > 0 && number < 91) {
+          sum = number ~/ 10;
+          ten = sum;
+        }
+      }
+    }
+  }
+  print("One Note Of $five Thousand $five Notes of Thousand ");
+  print("$fi Note of five Hundred");
+  print("$one Note of hundred");
+  print("$ten Note of Ten Rupees");
+}
